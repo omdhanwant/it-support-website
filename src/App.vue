@@ -1,24 +1,26 @@
 <template>
-  <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-  <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-  <Home> </Home>
+<div>
+  <NavBar></NavBar>
+  <div class="page-container">
+    <router-view></router-view>
+  </div>
+</div>
+  
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
-import Home from './components/Home.vue'
+import NavBar from './components/NavBar';
 
 export default {
   name: 'App',
   components: {
-    // HelloWorld,
-    Home
+    NavBar
   }
 }
 </script>
 
 <style>
-@import './css/style.css';
+/* @import './css/style.css'; */
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -26,6 +28,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.page-container{
+  padding: 20px;
 }
 
 </style>
