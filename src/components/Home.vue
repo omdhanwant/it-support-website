@@ -25,11 +25,15 @@
             
         </div>
        
+       
     </div>
+
+    
 </template>
 
 <script>
 import bbqImage from '../assets/bbq.jpg';
+
 // import defaultImage from '../assets/default.png';
 export default {
       data(){

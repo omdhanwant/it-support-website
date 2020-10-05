@@ -1,32 +1,74 @@
 <template>
-<div>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-link active">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-link">Features</a>
-      <a class="nav-link">Pricing</a>
-    </div>
-       <div class="btn-group">
-            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                User
-            </button>
-            <div class="dropdown-menu">
-                <a class="dropdown-item">Action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item">Separated link</a>
-            </div>
-            </div>
-  </div>
-</nav>
+<div class="main-banner">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<nav class="navbar navbar-expand-md navbar-light">
+					
+						<a class="navbar-brand " href="#" target="_blank"><img class="logo" src="../assets/logo.png" alt=""></a>	
+						
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav ml-auto py-4 py-md-0">
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active">
+									<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
+									<div class="dropdown-menu">
+										<a class="dropdown-item" href="#">Action</a>
+										<a class="dropdown-item" href="#">Another action</a>
+										<a class="dropdown-item" href="#">Something else here</a>
+										<a class="dropdown-item" href="#">Another action</a>
+									</div>
+								</li>
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link" href="#">Portfolio</a>
+								</li>
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link" href="#">Agency</a>
+								</li>
+								<!-- <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
+									<div class="dropdown-menu">
+										<a class="dropdown-item" href="#">Action</a>
+										<a class="dropdown-item" href="#">Another action</a>
+										<a class="dropdown-item" href="#">Something else here</a>
+										<a class="dropdown-item" href="#">Another action</a>
+									</div>
+								</li> -->
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link" href="#">Services</a>
+								</li>
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link" href="#">Journal</a>
+								</li>
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link" href="#">Contact</a>
+								</li>
+							</ul>
+						</div>
+						
+					</nav>		
+				</div>
+			</div>
+		</div>
 </div>
 
 </template>
 
 <style scoped>
+.main-banner{
+    background-image: url('../assets/hero_1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+}
+.logo{
+  width:125px
+}
+
 .nav{
     z-index: 1!important;
 }
