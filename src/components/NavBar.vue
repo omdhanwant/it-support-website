@@ -1,11 +1,11 @@
 <template>
 <div class="main-banner">
-		<div class="container">
+		<div>
 			<div class="row">
 				<div class="col-12">
 					<nav class="navbar navbar-expand-md navbar-light">
 					
-						<a class="navbar-brand " href="#" target="_blank"><img class="logo" src="../assets/logo.png" alt=""></a>	
+						<a class="navbar-brand"><img class="logo" src="../assets/logo.png" alt=""></a>	
 						
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="navbar-toggler-icon"></span>
@@ -14,37 +14,28 @@
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul class="navbar-nav ml-auto py-4 py-md-0">
 								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active">
-									<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
+									<a class="nav-link dropdown-toggle" data-toggle="dropdown"  role="button" aria-haspopup="true" aria-expanded="false">Home</a>
 									<div class="dropdown-menu">
-										<a class="dropdown-item" href="#">Action</a>
-										<a class="dropdown-item" href="#">Another action</a>
-										<a class="dropdown-item" href="#">Something else here</a>
-										<a class="dropdown-item" href="#">Another action</a>
+										<a class="dropdown-item" >Action</a>
+										<a class="dropdown-item" >Another action</a>
+										<a class="dropdown-item" >Something else here</a>
+										<a class="dropdown-item" >Another action</a>
 									</div>
 								</li>
 								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-									<a class="nav-link" href="#">Portfolio</a>
+									<a class="nav-link" >Portfolio</a>
 								</li>
 								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-									<a class="nav-link" href="#">Agency</a>
-								</li>
-								<!-- <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-									<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
-									<div class="dropdown-menu">
-										<a class="dropdown-item" href="#">Action</a>
-										<a class="dropdown-item" href="#">Another action</a>
-										<a class="dropdown-item" href="#">Something else here</a>
-										<a class="dropdown-item" href="#">Another action</a>
-									</div>
-								</li> -->
-								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-									<a class="nav-link" href="#">Services</a>
+									<a class="nav-link" >Agency</a>
 								</li>
 								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-									<a class="nav-link" href="#">Journal</a>
+									<a class="nav-link" >Services</a>
 								</li>
 								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-									<a class="nav-link" href="#">Contact</a>
+									<a class="nav-link" >Journal</a>
+								</li>
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link" >Contact</a>
 								</li>
 							</ul>
 						</div>
@@ -66,20 +57,26 @@
 
 }
 .logo{
-  width:125px
+  width: 82px;
+  padding: 0;
 }
 
 .nav{
     z-index: 1!important;
 }
-.nav-toggle {
-    padding: .5em;
-    background: transparent;
-    border: 0;
-    cursor: pointer;
-    position: fixed;
-    top: 1em;
-    z-index: 1000;
-    
+
+.navbar {
+	background: #e6e6e6;
+    opacity: 0.8;
+    height: 100px;
+}
+.navbar-nav {
+	background: rgb(230, 230, 230);
+	position:relative;
+	opacity: 0.9;
+}
+
+.navbar-nav .nav-item {
+  margin: auto 20px!important;
 }
 </style>
