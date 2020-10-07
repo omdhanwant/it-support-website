@@ -5,7 +5,7 @@
 				<div class="col-12">
 					<nav class="navbar navbar-expand-md navbar-light">
 					
-						<a class="navbar-brand"><img class="logo" src="../assets/logo.png" alt=""></a>	
+						<a class="navbar-brand p-0"><img class="logo" src="../assets/logo.png" alt=""></a>	
 						
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="navbar-toggler-icon"></span>
@@ -57,7 +57,7 @@
 
 }
 .logo{
-  width: 82px;
+  width: 100px;
   padding: 0;
 }
 
@@ -68,7 +68,7 @@
 .navbar {
 	background: #e6e6e6;
     opacity: 0.8;
-    height: 100px;
+    height: 110px;
 }
 .navbar-nav {
 	background: rgb(230, 230, 230);

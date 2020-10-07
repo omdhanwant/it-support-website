@@ -3,7 +3,7 @@
 <footer class="templateux-footer bg-light">
   <div class="container">
 
-    <div class="row mb-5">
+    <div class="row mb-5 p-3">
       <div class="col-md-4 pr-md-5">
         <div class="block-footer-widget">
           <h3>About</h3>
@@ -78,18 +78,11 @@
 
 <style scoped>
 
-
-.nav{
-    z-index: 1!important;
+.block-footer-widget h3{
+	font-size: var(--fs-h3)!important;
 }
-.nav-toggle {
-    padding: .5em;
-    background: transparent;
-    border: 0;
-    cursor: pointer;
-    position: fixed;
-    top: 1em;
-    z-index: 1000;
-    
+
+.block-footer-widget ul>li>a {
+	color: slateblue!important;
 }
 </style>
