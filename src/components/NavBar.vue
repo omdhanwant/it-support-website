@@ -1,8 +1,8 @@
 <template>
 <div class="main-banner">
 		<div>
-			<div class="row">
-				<div class="col-12">
+			<div class="row" style="width: 100%;margin: 0;">
+				<div class="col-12 p-0">
 					<nav class="navbar navbar-expand-md navbar-light">
 					
 						<a class="navbar-brand p-0"><img class="logo" src="../assets/logo.png" alt=""></a>	

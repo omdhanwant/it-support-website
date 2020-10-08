@@ -7,10 +7,11 @@
     --fw-reg: 300;
     --fw-bold: 900;
 
+    --clr-primary: slateblue;
     --clr-light: #fff;
     --clr-dark: #303030;
-    --clr-accent: #8abcfa;
-    --clr-grey: #d3d3d3;
+    --clr-accent: #557aa7;
+    --clr-grey: #e6e6e6;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -20,3 +21,16 @@
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
           0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
+
+body{
+    overflow-x: hidden;
+}
+
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+  }

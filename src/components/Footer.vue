@@ -62,7 +62,7 @@
       </div>
     </div> <!-- .row -->
 
-    <div class="row pt-5 text-center">
+    <div class="row text-center">
       <div class="col-md-12 text-center"><p>
         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
         Copyright © All rights reserved  
