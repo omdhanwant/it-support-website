@@ -1,12 +1,12 @@
 import VueRouter from 'vue-router';
 import Home from './components/Home.vue';
-// import Products from './components/Products.vue';
+import Service from './components/Service.vue';
 
 const router = new VueRouter({
     routes : [
         {path: '' , redirect: '/home' },
         { path: '/home', component: Home },
-        // { path: '/products', component: Products },
+        { path: '/service', component: Service },
         { path: '*', redirect: '/home' }
     ]
   });

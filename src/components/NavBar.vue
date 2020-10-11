@@ -4,8 +4,10 @@
 			<div class="row" style="width: 100%;margin: 0;">
 				<div class="col-12 p-0">
 					<nav class="navbar navbar-expand-md navbar-light">
-					
+					<router-link to="/home"><a class="nav-link" >
 						<a class="navbar-brand p-0"><img class="logo" src="../assets/logo.png" alt=""></a>	
+						</a></router-link>
+						
 						
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="navbar-toggler-icon"></span>
@@ -13,7 +15,7 @@
 						
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul class="navbar-nav ml-auto py-4 py-md-0">
-								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active">
+								<!-- <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active">
 									<a class="nav-link dropdown-toggle" data-toggle="dropdown"  role="button" aria-haspopup="true" aria-expanded="false">Home</a>
 									<div class="dropdown-menu">
 										<a class="dropdown-item" >Action</a>
@@ -21,9 +23,14 @@
 										<a class="dropdown-item" >Something else here</a>
 										<a class="dropdown-item" >Another action</a>
 									</div>
+								</li> -->
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<!-- <a class="nav-link" >Services</a> -->
+									<router-link to="/home"><a class="nav-link" >Home</a></router-link>
 								</li>
 								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-									<a class="nav-link" >Portfolio</a>
+									<!-- <a class="nav-link" >Services</a> -->
+									<router-link to="/service"><a class="nav-link" >Services</a></router-link>
 								</li>
 								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
 									<a class="nav-link" >Agency</a>

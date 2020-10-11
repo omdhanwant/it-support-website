@@ -5,6 +5,8 @@ import route from './router';
 import 'jquery/dist/jquery.slim.min.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 import 'bootstrap/dist/css/bootstrap.css';
+// import VueCarousel from 'vue-carousel';
+// Vue.use(VueCarousel);
 
 // createApp(App).mount('#app');
 Vue.use(route.VueRouter)
