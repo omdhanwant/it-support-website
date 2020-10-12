@@ -1,9 +1,9 @@
 <template>
-<div class="main-banner">
+<div>
 		<div>
 			<div class="row" style="width: 100%;margin: 0;">
 				<div class="col-12 p-0">
-					<nav class="navbar navbar-expand-md navbar-light">
+					<nav class="navbar navbar-expand-md navbar-light bg-white fixed-top">
 					<router-link to="/home"><a class="nav-link" >
 						<a class="navbar-brand p-0"><img class="logo" src="../assets/logo.png" alt=""></a>	
 						</a></router-link>
@@ -56,33 +56,24 @@
 </template>
 
 <style scoped>
-.main-banner{
-    background-image: url('../assets/hero_1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
 
-}
 .logo{
   width: 100px;
   padding: 0;
 }
-
 .nav{
     z-index: 1!important;
 }
-
 .navbar {
-	background: #e6e6e6;
+    /* background: #e6e6e6; */
     opacity: 0.8;
     height: 110px;
 }
 .navbar-nav {
-	background: rgb(230, 230, 230);
-	position:relative;
-	opacity: 0.9;
+    /* background: rgb(230, 230, 230); */
+    position:relative;
+    opacity: 0.9;
 }
-
 .navbar-nav .nav-item {
   margin: auto 20px!important;
 }

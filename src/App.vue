@@ -29,7 +29,8 @@ export default {
 /* @import './css/animsition.min.css'; */
 
 .page-container{
-  padding: 20px;
+  padding: 0px;
+  margin: 0px;
 }
 
 </style>

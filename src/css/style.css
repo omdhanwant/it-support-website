@@ -41,3 +41,26 @@ body{
 .bg-light {
     background-color: #f8f9fa!important;
 }
+
+.main-banner{
+    background-image: url('../assets/homebanner1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+}
+.fs-14{
+    font-size: 14px;
+}
+.fs-16{
+    font-size: 16px;
+}
+.fs-18{
+    font-size: 18px;
+}
+.fs-20{
+    font-size: 20px;
+}
+.fs-22{
+    font-size: 22px;
+}
