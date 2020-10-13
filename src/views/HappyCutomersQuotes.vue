@@ -49,3 +49,25 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+.testimonial-wrap .quote {
+  line-height: 1;
+  position: relative;
+  font-size: 100px;
+  color: #000;
+  text-align: center;
+}
+
+.block-testomonial {
+  text-align: center;
+}
+blockquote {
+  margin: 0 0 1rem;
+}
+.block-testomonial p {
+  font-size: 18px;
+  color: #000;
+  line-height: 2;
+}
+</style>

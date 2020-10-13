@@ -1,7 +1,6 @@
 <template>
 <div>
   <NavBar></NavBar>
-  <HeaderBanner></HeaderBanner>
   <div class="page-container">
 
                       <transition
@@ -19,14 +18,14 @@
 <script>
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
-import HeaderBanner from './views/HeaderBanner';
+// import HeaderBanner from './views/HeaderBanner';
 
 export default {
   name: 'App',
   components: {
     NavBar,
     Footer,
-    HeaderBanner,
+    // HeaderBanner,
   }
 }
 </script>

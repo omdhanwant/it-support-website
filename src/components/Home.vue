@@ -1,6 +1,11 @@
 <template>
   <div>
-
+<HeaderBanner 
+  banner-title="We Are Provided Sales & Support in IT Solutions"
+  banner-text="We Provided sales and support for the software and hardware across country." 
+  :banner-image='bannerImage'>
+ </HeaderBanner>
+    
     <div class="container">
       <div class="row">
         <div class="col-md-4">
@@ -89,7 +94,7 @@
     <!-- our services -->
     <div class="container">
       <div class="row mb-5">
-        <div class="col-12 text-center mb-5">
+        <div class="col-12 text-center mb-5 mt-5">
           <h2>Our Services</h2>
         </div>
         <div class="col-md-4 mb-4 aos-init aos-animate" data-aos="fade-up">
@@ -170,16 +175,24 @@
         </div>
       </div>
     </div>
+
+    <HappyCustomersQuotes/>
   </div>
 </template>
 
 <script>
-// import bbqImage from '../assets/bbq.jpg';
-
-// import defaultImage from '../assets/default.png';
+import HappyCustomersQuotes from '../views/HappyCutomersQuotes' ;
+import HeaderBanner from '../views/HeaderBanner';
+import bannerImage  from  '../assets/homebanner1.png';
 export default {
+  components: {
+    HappyCustomersQuotes,
+    HeaderBanner
+  },
   data() {
-    return {};
+    return {
+      bannerImage
+    };
   },
 };
 </script>
@@ -243,7 +256,7 @@ export default {
   background: #fff;
   -webkit-box-shadow: 0 15px 30px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0 15px 30px 0px rgba(0, 0, 0, 0.1);
-  margin-top: -80px;
+  /* margin-top: -80px; */
   margin-bottom: 80px;
 }
 
