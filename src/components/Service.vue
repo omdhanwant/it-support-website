@@ -41,7 +41,7 @@
         </div>
         </div>
 
-        <div class="bg-light mt-5 pt-5 pb-5 mb-5">
+        <!-- <div class="bg-light mt-5 pt-5 pb-5 mb-5">
             <div class="row justify-content-center">
                 <div class="row mb-5">
           <div class="col-12">
@@ -59,7 +59,7 @@
                 :perPage="1"
               :minSwipeDistance="100"
             >
-            <slide v-for="quote in quotes" :key="quote">
+            <slide v-for="(quote,i) in quotes" :key="i">
                 <blockquote class="block-testomonial">
                   <p>{{quote}}</p>
                   <p><cite>Craig Smith, CEO and Founder of Slite</cite></p>
@@ -68,7 +68,8 @@
             </carousel>
           </div>
         </div>
-        </div>
+        </div> -->
+    <HappyCustomersQuotes/>
     </div>
 </template>
 
@@ -80,11 +81,13 @@ import gear from '../assets/images/flaticon/svg/004-gear.svg';
 import conflict from '../assets/images/flaticon/svg/005-conflict.svg';
 import meeting from '../assets/images/flaticon/svg/006-meeting.svg';
 import brainstorming from '../assets/images/flaticon/svg/007-brainstorming.svg';
-import { Carousel, Slide } from "vue-carousel";
+// import { Carousel, Slide } from "vue-carousel";
+import HappyCustomersQuotes from '../views/HappyCutomersQuotes';
 export default {
     components: {
-    Carousel,
-    Slide,
+    // Carousel,
+    // Slide,
+    HappyCustomersQuotes,
   },
     data() {
         return {
@@ -109,10 +112,10 @@ export default {
                     description: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
                     icon: gear
                 },
-                {   name: "Network Infrastructure",
-                    description: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-                    icon: conflict
-                },
+                // {   name: "Network Infrastructure",
+                //     description: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+                //     icon: conflict
+                // },
                 {   name: "Network Infrastructure",
                     description: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
                     icon: conflict
@@ -125,11 +128,11 @@ export default {
                     description: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
                     icon: brainstorming
                 }],
-            quotes: [
-                "“When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.”"
-            ,
-            "“When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.”",
-            "“When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.”"]
+            // quotes: [
+            //     "“When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.”"
+            // ,
+            // "“When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.”",
+            // "“When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.”"]
         }
     }
 }
