@@ -1,23 +1,6 @@
 <template>
   <div>
-    <div>
-      <div class="main-banner row">
-        <div class="col-12 d-block my-auto text-center">
-          <div class="mb-5">
-            <h2 class="pb-4 text-white">
-              We Are Provided Sales &amp; Support in IT Solutions
-            </h2>
-            <p class="text-white fs-18">
-              We Provided sales and support for the software and hardware across
-              country.
-            </p>
-          </div>
-          <button type="button" class="btn btn-primary btn-lg">
-            Learn More
-          </button>
-        </div>
-      </div>
-    </div>
+
     <div class="container">
       <div class="row">
         <div class="col-md-4">

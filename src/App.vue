@@ -1,6 +1,7 @@
 <template>
 <div>
   <NavBar></NavBar>
+  <HeaderBanner></HeaderBanner>
   <div class="page-container">
     <router-view></router-view>
   </div>
@@ -12,13 +13,14 @@
 <script>
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
-
+import HeaderBanner from './views/HeaderBanner';
 
 export default {
   name: 'App',
   components: {
     NavBar,
-    Footer
+    Footer,
+    HeaderBanner,
   }
 }
 </script>

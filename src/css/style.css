@@ -42,13 +42,6 @@ body{
     background-color: #f8f9fa!important;
 }
 
-.main-banner{
-    background-image: url('../assets/homebanner1.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-
-}
 .fs-14{
     font-size: 14px;
 }
