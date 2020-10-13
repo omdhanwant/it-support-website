@@ -3,10 +3,10 @@
      <div class="main-banner row" :style="{ 'background-image': 'url(' + bannerImage + ')' }">
         <div class="col-12 d-block my-auto text-center">
           <div class="mb-5">
-            <h2 class="pb-4 text-white">
+            <h2 data-aos="fade-down" data-aos-duration="1000" class="pb-4 text-white">
               {{bannerTitle}}
             </h2>
-            <p class="text-white fs-18">
+            <p data-aos="fade-down" data-aos-duration="1000" class="text-white fs-18">
               {{bannerText}}
             </p>
           </div>

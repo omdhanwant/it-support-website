@@ -8,7 +8,7 @@
     
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
           <div class="media block-icon-1 d-block text-left">
             <div class="icon mb-3">
               <img
@@ -28,7 +28,7 @@
           </div>
           <!-- .block-icon-1 -->
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
           <div class="media block-icon-1 d-block text-left">
             <div class="icon mb-3">
               <img
@@ -48,7 +48,7 @@
           </div>
           <!-- .block-icon-1 -->
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
           <div class="media block-icon-1 d-block text-left">
             <div class="icon mb-3">
               <img
@@ -76,7 +76,7 @@
         <div class="row pt-5 pb-5">
           <div class="col-sm-8" style="background: #4444449c">
             <h2 class="pb-3 pt-4 text-center text-uppercase text-white">About Us</h2>
-            <p class="text-white">
+            <p data-aos="slide-up" data-aos-easing="ease" data-aos-duration="1000" data-aos-once="true" class="text-white">
               KBS dedication to delivering solutions that meet and exceed, the
               needs of customers has been driven since KBS was formed in 2015.
               Over 5 years, large and small organizations have put their trust
@@ -97,7 +97,7 @@
         <div class="col-12 text-center mb-5 mt-5">
           <h2>Our Services</h2>
         </div>
-        <div class="col-md-4 mb-4 aos-init aos-animate" data-aos="fade-up">
+        <div class="col-md-4 mb-4 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
           <div class="media block-icon-1 d-block text-center">
             <div class="icon mb-3">
               <img src="images/flaticon/svg/004-gear.svg" alt="Image" class="img-fluid">
@@ -108,7 +108,7 @@
             </div>
           </div> <!-- .block-icon-1 -->
         </div>
-        <div class="col-md-4 mb-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-md-4 mb-4 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
           <div class="media block-icon-1 d-block text-center">
             <div class="icon mb-3">
               <img src="images/flaticon/svg/005-conflict.svg" alt="Image" class="img-fluid">
@@ -119,7 +119,7 @@
             </div>
           </div> <!-- .block-icon-1 -->
         </div>
-        <div class="col-md-4 mb-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-md-4 mb-4 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
           <div class="media block-icon-1 d-block text-center">
             <div class="icon mb-3">
               <img src="images/flaticon/svg/006-meeting.svg" alt="Image" class="img-fluid">
@@ -133,7 +133,7 @@
         
         
         
-        <div class="col-md-4 mb-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+        <div class="col-md-4 mb-4 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
           <div class="media block-icon-1 d-block text-center">
             <div class="icon mb-3">
               <img src="images/flaticon/svg/007-brainstorming.svg" alt="Image" class="img-fluid">
@@ -144,7 +144,7 @@
             </div>
           </div> <!-- .block-icon-1 -->
         </div>
-        <div class="col-md-4 mb-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+        <div class="col-md-4 mb-4 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
           <div class="media block-icon-1 d-block text-center">
             <div class="icon mb-3">
               <img src="images/flaticon/svg/001-consultation.svg" alt="Image" class="img-fluid">
@@ -155,7 +155,7 @@
             </div>
           </div> <!-- .block-icon-1 -->
         </div>
-        <div class="col-md-4 mb-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
+        <div class="col-md-4 mb-4 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
           <div class="media block-icon-1 d-block text-center">
             <div class="icon mb-3">
               <img src="images/flaticon/svg/009-brainstorming-2.svg" alt="Image" class="img-fluid">
@@ -170,7 +170,7 @@
       </div>
       <div class="row">
 
-        <div class="col-md-12 text-center aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-md-12 text-center aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
           <p><a href="#" class="btn btn-black py-3 px-4">More Features</a></p>
         </div>
       </div>
