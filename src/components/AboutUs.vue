@@ -153,7 +153,7 @@ export default {
 .templateux-overlap .block-icon-1 {
   z-index: 1;
   padding: 30px;
-  background: #fff;
+  /* background: #fff; */
   box-shadow: 0 15px 30px 0px rgba(0, 0, 0, 0.1);
   margin-top: -200px;
 }

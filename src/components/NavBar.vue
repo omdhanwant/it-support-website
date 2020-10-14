@@ -38,7 +38,9 @@
                   >
                 </li>
                 <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                  <a class="nav-link">Blogs</a>
+                  <router-link to="/blogs"
+                    ><a class="nav-link">Blogs</a></router-link
+                  >
                 </li>
 				<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                   <router-link to="/about-us"

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="pt-5 pb-5 mb-5">
+        <div class="pt-5 pb-5 mb-5 main_container">
             <div class="row justify-content-center">
                 <div class="row mb-5">
           <div class="col-12">
@@ -51,6 +51,9 @@ export default {
 </script>
 
 <style scoped>
+.main_container {
+  background: var(--clr-grey);
+}
 .testimonial-wrap .quote {
   line-height: 1;
   position: relative;
