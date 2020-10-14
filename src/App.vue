@@ -2,13 +2,9 @@
 <div>
   <NavBar></NavBar>
   <div class="page-container">
-
-                      <transition
-        name="fade"
-        mode="out-in"
-      >
+<transition name="fade" mode="out-in">
     <router-view></router-view>
-                      </transition>
+</transition>
   </div>
   <Footer></Footer>
 </div>

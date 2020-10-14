@@ -6,7 +6,7 @@
       :banner-image="bannerImage"
     >
     </HeaderBanner>
-    <div class="row">
+    <!-- <div class="row">
       <div class="col-md-12 templateux-overlap">
         <div class="row">
           <div
@@ -29,16 +29,18 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="bg-light mt-5 pt-5 pb-5">
+    <div class="bg-light pt-5 pb-5">
       <div class="row">
         <div class="col-12 text-center mb-5">
           <h2>Our Services</h2>
         </div>
+        <div class="col-12 text-center mb-5">
+          <h3>Software & Hardware Sales </h3>
+        </div>
         <div
-          v-for="service in listServices"
-          :key="service.name"
+          v-for="service in listServices" :key="service.name"
           class="col-md-4 mb-4 aos-init aos-animate"
           data-aos="fade-up"
         >
@@ -51,39 +53,12 @@
               <p>{{ service.description }}</p>
             </div>
           </div>
-          <!-- .block-icon-1 -->
+          
         </div>
       </div>
     </div>
 
-    <!-- <div class="bg-light mt-5 pt-5 pb-5 mb-5">
-            <div class="row justify-content-center">
-                <div class="row mb-5">
-          <div class="col-12">
-            <h2>Happy Customers</h2>
-          </div>
-        </div>
-            </div>
-
-            <div class="row justify-content-center">
-          <div class="col-md-8 testimonial-wrap">
-            <div class="quote">“</div>
-            <carousel
-            :easing="'ease'"
-            :autoplay="true"
-                :perPage="1"
-              :minSwipeDistance="100"
-            >
-            <slide v-for="(quote,i) in quotes" :key="i">
-                <blockquote class="block-testomonial">
-                  <p>{{quote}}</p>
-                  <p><cite>Craig Smith, CEO and Founder of Slite</cite></p>
-                </blockquote>
-              </slide>
-            </carousel>
-          </div>
-        </div>
-        </div> -->
+   
     <HappyCustomersQuotes />
   </div>
 </template>
@@ -130,17 +105,15 @@ export default {
           icon: turnoverSvg,
         },
       ],
-      listServices: [
+     
+     listServices: [
         {
           name: "IT consulting",
           description:
             "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
           icon: gear,
         },
-        // {   name: "Network Infrastructure",
-        //     description: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-        //     icon: conflict
-        // },
+       
         {
           name: "Network Infrastructure",
           description:
@@ -159,13 +132,26 @@ export default {
             "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
           icon: brainstorming,
         },
+        {
+          name: "Corporate Collaboration",
+          description:
+            "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+          icon: consultationSvg,
+        },
+        {
+          name: "Strategic Partners",
+          description:
+            "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+          icon: discussionSvg,
+        },
+        {
+          name: "Infinite Posibilities",
+          description:
+            "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+          icon: turnoverSvg,
+        },
       ],
-      // quotes: [
-      //     "“When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.”"
-      // ,
-      // "“When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.”",
-      // "“When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.”"]
-    };
+     };
   },
 };
 </script>

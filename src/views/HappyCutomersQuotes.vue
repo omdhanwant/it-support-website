@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="bg-light mt-5 pt-5 pb-5 mb-5">
+        <div class="pt-5 pb-5 mb-5">
             <div class="row justify-content-center">
                 <div class="row mb-5">
           <div class="col-12">

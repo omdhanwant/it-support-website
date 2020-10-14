@@ -6,7 +6,7 @@
   :banner-image='bannerImage'>
  </HeaderBanner>
     
-    <div class="container">
+    <div class="container" style="margin-top: -60px;">
       <div class="row">
         <div class="col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
           <div class="media block-icon-1 d-block text-left">
@@ -97,75 +97,24 @@
         <div class="col-12 text-center mb-5 mt-5">
           <h2>Our Services</h2>
         </div>
-        <div class="col-md-4 mb-4 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+        <div
+          v-for="service in listServices" :key="service.name"
+          class="col-md-4 mb-4 aos-init aos-animate"
+          data-aos="fade-up"
+        >
           <div class="media block-icon-1 d-block text-center">
             <div class="icon mb-3">
-              <img src="images/flaticon/svg/004-gear.svg" alt="Image" class="img-fluid">
+              <img :src="service.icon" alt="Image" class="img-fluid" />
             </div>
             <div class="media-body">
-              <h3 class="h5 mb-4">IT consulting</h3>
-              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+              <h3 class="h5 mb-4">{{ service.name }}</h3>
+              <p>{{ service.description }}</p>
             </div>
-          </div> <!-- .block-icon-1 -->
-        </div>
-        <div class="col-md-4 mb-4 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-          <div class="media block-icon-1 d-block text-center">
-            <div class="icon mb-3">
-              <img src="images/flaticon/svg/005-conflict.svg" alt="Image" class="img-fluid">
-            </div>
-            <div class="media-body">
-              <h3 class="h5 mb-4">Network Infrastructure</h3>
-              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-            </div>
-          </div> <!-- .block-icon-1 -->
-        </div>
-        <div class="col-md-4 mb-4 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-          <div class="media block-icon-1 d-block text-center">
-            <div class="icon mb-3">
-              <img src="images/flaticon/svg/006-meeting.svg" alt="Image" class="img-fluid">
-            </div>
-            <div class="media-body">
-              <h3 class="h5 mb-4">Network Designing</h3>
-              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-            </div>
-          </div> <!-- .block-icon-1 -->
+          </div>
+          
         </div>
         
         
-        
-        <div class="col-md-4 mb-4 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-          <div class="media block-icon-1 d-block text-center">
-            <div class="icon mb-3">
-              <img src="images/flaticon/svg/007-brainstorming.svg" alt="Image" class="img-fluid">
-            </div>
-            <div class="media-body">
-              <h3 class="h5 mb-4">Network Maintenance</h3>
-              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-            </div>
-          </div> <!-- .block-icon-1 -->
-        </div>
-        <div class="col-md-4 mb-4 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-          <div class="media block-icon-1 d-block text-center">
-            <div class="icon mb-3">
-              <img src="images/flaticon/svg/001-consultation.svg" alt="Image" class="img-fluid">
-            </div>
-            <div class="media-body">
-              <h3 class="h5 mb-4">Network Support</h3>
-              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-            </div>
-          </div> <!-- .block-icon-1 -->
-        </div>
-        <div class="col-md-4 mb-4 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-          <div class="media block-icon-1 d-block text-center">
-            <div class="icon mb-3">
-              <img src="images/flaticon/svg/009-brainstorming-2.svg" alt="Image" class="img-fluid">
-            </div>
-            <div class="media-body">
-              <h3 class="h5 mb-4">Network Maintenance</h3>
-              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-            </div>
-          </div> <!-- .block-icon-1 -->
-        </div>
 
       </div>
       <div class="row">
@@ -175,14 +124,24 @@
         </div>
       </div>
     </div>
-
+    
     <HappyCustomersQuotes/>
   </div>
 </template>
 
 <script>
+import consultationSvg from "../assets/images/flaticon/svg/001-consultation.svg";
+import discussionSvg from "../assets/images/flaticon/svg/002-discussion.svg";
+import gear from "../assets/images/flaticon/svg/004-gear.svg";
+import conflict from "../assets/images/flaticon/svg/005-conflict.svg";
+import meeting from "../assets/images/flaticon/svg/006-meeting.svg";
+import brainstorming from "../assets/images/flaticon/svg/007-brainstorming.svg";
+
+
+
 import HappyCustomersQuotes from '../views/HappyCutomersQuotes' ;
 import HeaderBanner from '../views/HeaderBanner';
+
 import bannerImage  from  '../assets/homebanner1.png';
 export default {
   components: {
@@ -191,8 +150,48 @@ export default {
   },
   data() {
     return {
-      bannerImage
-    };
+      bannerImage,
+      listServices: [
+         {
+          name: "Corporate Collaboration",
+          description:
+            "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+          icon: consultationSvg,
+        },
+        {
+          name: "Strategic Partners",
+          description:
+            "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+          icon: discussionSvg,
+        },
+        {
+          name: "IT consulting",
+          description:
+            "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+          icon: gear,
+        },
+       
+        {
+          name: "Network Infrastructure",
+          description:
+            "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+          icon: conflict,
+        },
+        {
+          name: "Network Designing",
+          description:
+            "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+          icon: meeting,
+        },
+        {
+          name: "Network Support",
+          description:
+            "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+          icon: brainstorming,
+        },
+      ],
+     };
+    
   },
 };
 </script>
@@ -277,4 +276,5 @@ export default {
   background-size: cover;
  
 }
+
 </style>

@@ -40,6 +40,11 @@
                 <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                   <a class="nav-link">Blogs</a>
                 </li>
+				<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                  <router-link to="/about-us"
+                    ><a class="nav-link">About Us</a></router-link
+                  >
+                </li>
                 <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                   <router-link to="/contact-us"
                     ><a class="nav-link">Contact</a></router-link
