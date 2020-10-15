@@ -8,7 +8,7 @@
     
     <div class="container" style="margin-top: -60px;margin-bottom: 60px;">
       <div class="row">
-        <div class="col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+        <div class="col-md-4  aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
           <div class="media block-icon-1 d-block text-left">
             <div class="icon mb-3">
               <img
@@ -28,7 +28,7 @@
           </div>
           <!-- .block-icon-1 -->
         </div>
-        <div class="col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+        <div class="col-md-4  aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
           <div class="media block-icon-1 d-block text-left">
             <div class="icon mb-3">
               <img
@@ -48,7 +48,7 @@
           </div>
           <!-- .block-icon-1 -->
         </div>
-        <div class="col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+        <div class="col-md-4  aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
           <div class="media block-icon-1 d-block text-left">
             <div class="icon mb-3">
               <img
@@ -98,7 +98,7 @@
           <h2>Our Services</h2>
         </div>
         <div v-for="service in listServices" :key="service.name"
-          class="col-md-4 mb-5 aos-init aos-animate" data-aos="fade-up">
+          class="col-md-4 mb-5  aos-animate" data-aos="fade-up">
           <div class="media block-icon-1 d-block text-center">
             <div class="icon mb-3">
               <img :src="service.icon" alt="Image" class="img-fluid" />
@@ -111,7 +111,7 @@
         </div>
       </div>
       <div class="row pb-5">
-        <div class="col-md-12 text-center aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+        <div class="col-md-12 text-center  aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
           <router-link to="/service" class="btn btn-primary py-3 px-4"> More Features </router-link>
         </div>
       </div>

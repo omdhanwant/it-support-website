@@ -74,7 +74,7 @@
 
 <style scoped>
 .templateux-footer {
-  box-shadow: 10px 5px 10px 8px #e6e6e6;
+      box-shadow: var(--bs);
 }
 .block-footer-widget h3 {
   font-size: var(--fs-h3) !important;

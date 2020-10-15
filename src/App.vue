@@ -46,7 +46,6 @@ export default {
         if (!this.ticking) {
           window.requestAnimationFrame(() => {
             // Do something with the scroll position
-            console.log(this.last_known_scroll_position);
             if(this.last_known_scroll_position > 500) {
               this.hideNav = true;
               } else {
@@ -57,7 +56,6 @@ export default {
 
           this.ticking = true;
         }
-        // this.last_known_scroll_position = window.scrollY;
     },
     scrollUp(){
       window.scrollTo({ top: 0, behavior: 'smooth' });
