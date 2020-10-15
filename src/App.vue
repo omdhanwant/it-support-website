@@ -1,6 +1,6 @@
 <template>
 <div>
-  <NavBar></NavBar>
+  <NavBar :is-hidden="hideNav"></NavBar>
   <div class="page-container">
 <transition name="fade" mode="out-in">
     <router-view></router-view>
@@ -21,8 +21,42 @@ export default {
     NavBar,
     Footer
   },
+  data() {
+    return {
+      hideNav: false,
+      last_known_scroll_position: 0,
+      ticking: false
+    }
+  },
+  created () {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.handleScroll);
+  },
+  methods: {
+    handleScroll() {
+       this.last_known_scroll_position = window.scrollY;
+
+        if (!this.ticking) {
+          window.requestAnimationFrame(() => {
+            // Do something with the scroll position
+            console.log(this.last_known_scroll_position);
+            if(this.last_known_scroll_position > 500) {
+              this.hideNav = true;
+              } else {
+                this.hideNav = false;
+              }
+            this.ticking = false;
+          });
+
+          this.ticking = true;
+        }
+        // this.last_known_scroll_position = window.scrollY;
+    }
+  },
   watch:{
-    $route (to, from){
+    $route (){
         window.scroll(0,0);
     }
 } 

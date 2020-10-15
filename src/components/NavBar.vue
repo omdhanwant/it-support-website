@@ -1,9 +1,8 @@
 <template>
   <div>
-    <div>
       <div class="row" style="width: 100%; margin: 0">
         <div class="col-12 p-0">
-          <nav class="navbar navbar-expand-md navbar-light bg-white fixed-top">
+          <nav class="navbar navbar-expand-md navbar-light bg-white fixed-top" :class="{ 'animate' : isHidden }">
             <router-link to="/home"
               ><a class="nav-link">
                 <a class="navbar-brand p-0">
@@ -57,14 +56,27 @@
           </nav>
         </div>
       </div>
-    </div>
   </div>
 </template>
+
+<script>
+export default {
+  props:{ 
+    isHidden: {
+        type: Boolean,
+        default: false
+    } 
+  }
+}
+</script>
 
 <style scoped>
 .logo {
   width: 100px;
   padding: 0;
+}
+.itnavbar {
+  transition: all 0.5s ease-out;
 }
 .nav {
   z-index: 1 !important;
@@ -73,6 +85,11 @@
   /* background: #e6e6e6; */
   opacity: 0.8;
   height: 110px;
+  transition: all 0.5s ease-in-out;
+}
+.animate {
+  opacity: 0!important;
+  height: 0!important;
 }
 .navbar-nav {
   /* background: rgb(230, 230, 230); */
