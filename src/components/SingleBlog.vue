@@ -1,13 +1,13 @@
 <template>
     <div>
             <HeaderBanner
-      banner-title="Blog"
+      :banner-title="'Blog ' + $route.params.id"
       banner-text="World Cup 2018."
       :banner-image="bannerImage"
     >
     </HeaderBanner>
         <div class="container">
-            <h2 class="mb-3">World Cup 2018</h2>
+            <h2 class="mb-3">Blog {{ $route.params.id }}</h2>
 
             <!-- <p><img :src="hero1" alt="" class="img-fluid"></p> -->
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, eius mollitia suscipit, quisquam doloremque distinctio perferendis et doloribus unde architecto optio laboriosam porro adipisci sapiente officiis nemo accusamus ad praesentium? Esse minima nisi et. Dolore perferendis, enim praesentium omnis, iste doloremque quia officia optio deserunt molestiae voluptates soluta architecto tempora.</p>
@@ -48,7 +48,8 @@ export default {
         return {
             hero1,
             slider1,
-            bannerImage
+            bannerImage,
+            blogId: null
         }
     }
 }

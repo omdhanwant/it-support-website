@@ -14,15 +14,18 @@
 <script>
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
-// import HeaderBanner from './views/HeaderBanner';
 
 export default {
   name: 'App',
   components: {
     NavBar,
-    Footer,
-    // HeaderBanner,
-  }
+    Footer
+  },
+  watch:{
+    $route (to, from){
+        window.scroll(0,0);
+    }
+} 
 }
 </script>
 

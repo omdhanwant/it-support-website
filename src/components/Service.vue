@@ -6,30 +6,6 @@
       :banner-image="bannerImage"
     >
     </HeaderBanner>
-    <!-- <div class="row">
-      <div class="col-md-12 templateux-overlap">
-        <div class="row">
-          <div
-            v-for="service in services"
-            :key="service.name"
-            class="col-md-4 col-sm-12 col-lg-4 aos-init aos-animate"
-            data-aos="fade-up"
-            data-aos-delay="600"
-          >
-            <div class="media block-icon-1 d-block text-left">
-              <div class="icon mb-3">
-                <img :src="service.icon" alt="Image" class="img-fluid" />
-              </div>
-              <div class="media-body">
-                <h3 class="h5 mb-4">{{ service.name }}</h3>
-                <p>{{ service.description }}</p>
-                <p><a>Learn More</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
 
     <div class="bg-light pt-5 pb-5">
       <div class="row">
@@ -64,16 +40,10 @@
 </template>
 
 <script>
-import consultationSvg from "../assets/images/flaticon/svg/001-consultation.svg";
-import discussionSvg from "../assets/images/flaticon/svg/002-discussion.svg";
-import turnoverSvg from "../assets/images/flaticon/svg/003-turnover.svg";
-import gear from "../assets/images/flaticon/svg/004-gear.svg";
-import conflict from "../assets/images/flaticon/svg/005-conflict.svg";
-import meeting from "../assets/images/flaticon/svg/006-meeting.svg";
-import brainstorming from "../assets/images/flaticon/svg/007-brainstorming.svg";
 import HappyCustomersQuotes from "../views/HappyCutomersQuotes";
 import HeaderBanner from "../views/HeaderBanner";
 import bannerImage from "../assets/homebanner1.png";
+import  data  from '../services/data';
 export default {
   components: {
     HappyCustomersQuotes,
@@ -82,77 +52,12 @@ export default {
   data() {
     return {
       bannerImage,
-      consultationSvg,
-      discussionSvg,
-      turnoverSvg,
-      services: [
-        {
-          name: "Corporate Collaboration",
-          description:
-            "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-          icon: consultationSvg,
-        },
-        {
-          name: "Strategic Partners",
-          description:
-            "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-          icon: discussionSvg,
-        },
-        {
-          name: "Infinite Posibilities",
-          description:
-            "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-          icon: turnoverSvg,
-        },
-      ],
-     
-     listServices: [
-        {
-          name: "IT consulting",
-          description:
-            "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-          icon: gear,
-        },
-       
-        {
-          name: "Network Infrastructure",
-          description:
-            "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-          icon: conflict,
-        },
-        {
-          name: "Network Designing",
-          description:
-            "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-          icon: meeting,
-        },
-        {
-          name: "Network Support",
-          description:
-            "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-          icon: brainstorming,
-        },
-        {
-          name: "Corporate Collaboration",
-          description:
-            "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-          icon: consultationSvg,
-        },
-        {
-          name: "Strategic Partners",
-          description:
-            "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-          icon: discussionSvg,
-        },
-        {
-          name: "Infinite Posibilities",
-          description:
-            "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-          icon: turnoverSvg,
-        },
-      ],
+      listServices: []
      };
   },
+  beforeMount(){
+    this.listServices = data.getServices();
+  }
 };
 </script>
 

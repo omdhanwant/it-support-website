@@ -7,66 +7,19 @@
     >
     </HeaderBanner>
 
-    <!-- <router-link to="/blog/1" tag="button">
-    <button class="btn btn-primary"></button>
-    </router-link> -->
-
-
     <div class="templateux-section">
       <div class="container">
         <div class="row">
           
-          <div class="col-md-6 col-lg-4 mb-4">
-           <router-link to="/blog/1"> <a   class="block-thumbnail-1 one-whole show-text aos-init height-sm aos-animate" :style="{ 'background-image': 'url(' + slider1 + ')' }" data-aos="fade" data-aos-delay="300" >
+          <div v-for="(blog, i) in blogs" :key="i" class="col-md-6 col-lg-4 mb-4">
+           <router-link :to="'/blog/'+ blog.id"> <a   class="block-thumbnail-1 one-whole show-text aos-init height-sm aos-animate" :style="{ 'background-image': 'url(' + blog.image + ')' }" data-aos="fade" data-aos-delay="300" >
               <div class="block-thumbnail-content">
-                <h2>Behind the word mountains</h2>
-                <span class="post-meta">January 20, 2019 • 3 Comments</span>
+                <h2>{{ blog.title }}</h2>
+                <span class="post-meta">{{ blog.date }}</span>
               </div>
             </a>
            </router-link>
           </div>
-          <div class="col-md-6 col-lg-4 mb-4">
-            <a  class="block-thumbnail-1 one-whole show-text aos-init height-sm aos-animate" :style="{ 'background-image': 'url(' + slider2 + ')' }"  data-aos="fade" data-aos-delay="300" >
-              <div class="block-thumbnail-content">
-                <h2>Behind the word mountains</h2>
-                <span class="post-meta">January 20, 2019 • 3 Comments</span>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4">
-            <a  class="block-thumbnail-1 one-whole show-text aos-init height-sm aos-animate" :style="{ 'background-image': 'url(' + slider3 + ')' }"  data-aos="fade" data-aos-delay="300" >
-              <div class="block-thumbnail-content">
-                <h2>Behind the word mountains</h2>
-                <span class="post-meta">January 20, 2019 • 3 Comments</span>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-md-6 col-lg-4 mb-4">
-            <a  class="block-thumbnail-1 one-whole show-text aos-init height-sm aos-animate" :style="{ 'background-image': 'url(' + slider4 + ')' }" data-aos="fade" data-aos-delay="300" >
-              <div class="block-thumbnail-content">
-                <h2>Behind the word mountains</h2>
-                <span class="post-meta">January 20, 2019 • 3 Comments</span>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4">
-            <a  class="block-thumbnail-1 one-whole show-text aos-init height-sm aos-animate" :style="{ 'background-image': 'url(' + slider1 + ')' }" data-aos="fade" data-aos-delay="300" >
-              <div class="block-thumbnail-content">
-                <h2>Behind the word mountains</h2>
-                <span class="post-meta">January 20, 2019 • 3 Comments</span>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4">
-            <a  class="block-thumbnail-1 one-whole show-text aos-init height-sm aos-animate" :style="{ 'background-image': 'url(' + slider2 + ')' }" data-aos="fade" data-aos-delay="300" >
-              <div class="block-thumbnail-content">
-                <h2>Behind the word mountains</h2>
-                <span class="post-meta">January 20, 2019 • 3 Comments</span>
-              </div>
-            </a>
-          </div>
-
         </div>
 
       </div>
@@ -84,6 +37,7 @@ import slider1 from '@/assets/images/slider-1.jpg';
 import slider2 from '@/assets/images/slider-2.jpg';
 import slider3 from '@/assets/images/slider-3.jpg';
 import slider4 from '@/assets/images/slider-4.jpg';
+import dataUtil from '../services/data';
 export default {
     components:{
         HeaderBanner,
@@ -92,10 +46,22 @@ export default {
     data() {
         return {
             bannerImage,
-            slider1,slider2,slider3,slider4
+            images: [ slider1,slider2,slider3,slider4 ],
+            blogs: []
         }
+    },
+    methods: {
+      getAllBlogs() {
+        this.blogs = dataUtil.getBlogs(this.images, 12);
+      } 
+      
+    },
+    beforeMount() {
+      this.getAllBlogs();
     }
+      
 };
+
 </script>
 
 <style scoped>
