@@ -6,7 +6,7 @@
       :banner-image="bannerImage"
     >
     </HeaderBanner>
-    <div class="pt-5">
+    <div class="pt-5 pb-5">
       <div class="container">
         <div class="row pt-4">
           <div class="col-12">
