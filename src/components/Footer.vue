@@ -1,20 +1,8 @@
 <template>
   <div>
     <footer class="templateux-footer bg-light">
-      <div class="container">
+      <div class="container pt-5 pb-5">
         <div class="row mb-5 p-3">
-          <!-- <div class="col-md-4 pr-md-5">
-            <div class="block-footer-widget">
-              <h3>About</h3>
-              <p>
-                A small river named Duden flows by their place and supplies it
-                with the necessary regelialia.
-              </p>
-            </div>
-          </div> -->
-
-          <!-- <div class="col-md-12">
-            <div class="row"> -->
               <div class="col-md-3">
                 <div class="block-footer-widget">
                   <h3>Learn More</h3>

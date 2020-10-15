@@ -6,7 +6,7 @@
   :banner-image='bannerImage'>
  </HeaderBanner>
     
-    <div class="container" style="margin-top: -60px;">
+    <div class="container" style="margin-top: -60px;margin-bottom: 60px;">
       <div class="row">
         <div class="col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
           <div class="media block-icon-1 d-block text-left">
@@ -23,7 +23,7 @@
                 A small river named Duden flows by their place and supplies it
                 with the necessary regelialia.
               </p>
-              <p><a href="#">Learn More</a></p>
+             <p> <router-link to="/about-us" class="btn btn-primary"> Learn More </router-link></p>
             </div>
           </div>
           <!-- .block-icon-1 -->
@@ -43,7 +43,7 @@
                 A small river named Duden flows by their place and supplies it
                 with the necessary regelialia.
               </p>
-              <p><a href="#">Learn More</a></p>
+              <p> <router-link to="/about-us" class="btn btn-primary"> Learn More </router-link></p>
             </div>
           </div>
           <!-- .block-icon-1 -->
@@ -63,7 +63,7 @@
                 A small river named Duden flows by their place and supplies it
                 with the necessary regelialia.
               </p>
-              <p><a href="#">Learn More</a></p>
+              <p> <router-link to="/about-us" class="btn btn-primary"> Learn More </router-link></p>
             </div>
           </div>
           <!-- .block-icon-1 -->
@@ -85,7 +85,7 @@
               customers to have a positive impact. Because KBS is, after all,
               about people.
             </p>
-            <a href="#" class="btn btn-primary mb-4 mr-3 mt-4 px-4 py-3">Learn More</a>
+             <p> <router-link to="/about-us" class="btn btn-primary"> Learn More </router-link></p>
           </div>
           <div class="col-sm-4"></div>
         </div>
@@ -93,15 +93,12 @@
     </div>
     <!-- our services -->
     <div class="container">
-      <div class="row mb-5">
-        <div class="col-12 text-center mb-5 mt-5">
+      <div class="row">
+        <div class="col-12 text-center mb-3 mt-5">
           <h2>Our Services</h2>
         </div>
-        <div
-          v-for="service in listServices" :key="service.name"
-          class="col-md-4 mb-4 aos-init aos-animate"
-          data-aos="fade-up"
-        >
+        <div v-for="service in listServices" :key="service.name"
+          class="col-md-4 mb-5 aos-init aos-animate" data-aos="fade-up">
           <div class="media block-icon-1 d-block text-center">
             <div class="icon mb-3">
               <img :src="service.icon" alt="Image" class="img-fluid" />
@@ -111,16 +108,11 @@
               <p>{{ service.description }}</p>
             </div>
           </div>
-          
         </div>
-        
-        
-
       </div>
-      <div class="row">
-
+      <div class="row pb-5">
         <div class="col-md-12 text-center aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-          <p><a href="#" class="btn btn-black py-3 px-4">More Features</a></p>
+          <router-link to="/service" class="btn btn-primary py-3 px-4"> More Features </router-link>
         </div>
       </div>
     </div>
@@ -255,8 +247,8 @@ export default {
   background: #fff;
   -webkit-box-shadow: 0 15px 30px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0 15px 30px 0px rgba(0, 0, 0, 0.1);
-  /* margin-top: -80px; */
-  margin-bottom: 80px;
+  /* margin-top: -80px;
+  margin-bottom: 80px; */
 }
 
 .block-icon-1 img {

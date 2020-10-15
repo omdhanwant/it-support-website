@@ -10,9 +10,9 @@
               {{bannerText}}
             </p>
           </div>
-          <button type="button" class="btn btn-primary btn-lg">
+          <!-- <button type="button" class="btn btn-primary btn-lg">
             Learn More
-          </button>
+          </button> -->
         </div>
       </div>
   </div>

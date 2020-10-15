@@ -2,7 +2,7 @@
   <div>
     <HeaderBanner
       banner-title="Services"
-      banner-text="Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+      banner-text="We provided sales and support for the software and hardware across country."
       :banner-image="bannerImage"
     >
     </HeaderBanner>
