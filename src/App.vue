@@ -7,6 +7,11 @@
 </transition>
   </div>
   <Footer></Footer>
+
+  <!-- floating button -->
+  <div @click="scrollUp()" class="float_button">
+    <i class="fa fa-arrow-up" aria-hidden="true"></i>
+  </div>
 </div>
   
 </template>
@@ -53,6 +58,9 @@ export default {
           this.ticking = true;
         }
         // this.last_known_scroll_position = window.scrollY;
+    },
+    scrollUp(){
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   },
   watch:{
@@ -83,5 +91,30 @@ export default {
 .fade-enter,
 .fade-leave-active {
   opacity: 0
+}
+
+.float_button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: var(--clr-primary);
+  box-shadow: var(--bs);
+  transition: all 0.5s ease-out;
+}
+
+.float_button:hover {
+  zoom: 1.2;
+}
+
+.float_button svg {
+    position: absolute;
+    left: 33%;
+    top: 28%;
+    font-size: 20px;
+    color: var(--clr-light);
 }
 </style>

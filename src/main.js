@@ -5,6 +5,8 @@ import route from './router';
 import 'jquery/dist/jquery.slim.min.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 import 'bootstrap/dist/css/bootstrap.css';
+import '@fortawesome/fontawesome-free/css/all.css'
+import '@fortawesome/fontawesome-free/js/all.js'
 import AOS from "aos";
 import "aos/dist/aos.css";
 // import VueCarousel from 'vue-carousel';

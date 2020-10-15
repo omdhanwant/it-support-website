@@ -17,6 +17,13 @@ const router = new VueRouter({
         {path: '/blog/:id', component: SingleBlog },
         { path: '*', redirect: '/home' }
     ]
+    // ,
+    // scrollBehavior(to) {
+    //     if (to.hash) {
+    //         return window.scrollTo({ top: document.querySelector(to.hash).offsetTop, behavior: 'smooth' });
+    //     }
+    //     return window.scrollTo({ top: 0, behavior: 'smooth' });
+    // }
   });
 
 export default {
