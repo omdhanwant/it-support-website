@@ -55,19 +55,18 @@
             <!-- .row -->
           <!-- </div> -->
         </div>
-        <!-- .row -->
+        
+      </div>
 
-        <div class="row text-center">
+       <div class="row text-center bg-dark p-3 row text-center">
           <div class="col-md-12 text-center">
-            <p>
+            <div class="mb-0 text-white">
               <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
               Copyright © All rights reserved
               <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </p>
+            </div>
           </div>
         </div>
-        <!-- .row -->
-      </div>
     </footer>
   </div>
 </template>
