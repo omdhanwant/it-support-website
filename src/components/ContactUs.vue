@@ -30,21 +30,21 @@
             </form>
           </div>
           <div class="col-md-5 offset-1">
-            <div class="media block-icon-1 d-block">
+            <div class="media block-icon-1 my-d-block">
               <!-- <div class="icon mb-3"><span class="ion-ios-location-outline"></span></div> -->
               <div class="media-body">
-                <h3 class="h5 mb-4">Arthur Bldg flr, New York City, USA</h3>
+                <h3 class="h5 mb-4">G-14 Sai Shraddha Park, Near Real Management Institute, Beltarodi Road, Nagpur</h3>
               </div>
             </div> <!-- .block-icon-1 -->
 
-            <div class="media block-icon-1 d-block">
+            <div class="media block-icon-1 my-d-block">
               <!-- <div class="icon mb-3"><span class="ion-ios-telephone-outline"></span></div> -->
               <div class="media-body">
-                <h3 class="h5 mb-4">+1(817) 402-8792</h3>
+                <h3 class="h5 mb-4">+1(817) 406-8792</h3>
               </div>
             </div> <!-- .block-icon-1 -->
 
-            <div class="media block-icon-1 d-block">
+            <div class="media block-icon-1 my-d-block">
               <!-- <div class="icon mb-3"><span class="ion-ios-email-outline"></span></div> -->
               <div class="media-body">
                 <h3 class="h5 mb-4">kumarbsindia@gmail.com</h3>
@@ -96,10 +96,10 @@ export default {
     flex: 1;
 }
 
-.d-block {
+.my-d-block {
     display: block !important;
-    margin-bottom: 50px;
-    margin-top: 60px;
+    margin-bottom: 70px;
+    margin-top: 40px;
 }
 
 </style>

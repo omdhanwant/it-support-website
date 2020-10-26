@@ -25,46 +25,46 @@ export default {
     getServices() {
        return [
         {
-          name: "IT consulting",
+          name: "Medical Billing",
           description:
-            "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+            "We specialize in providing medical billing solutions across specialties. Right from Charge Capture to Denials, we handle it all!",
           icon: gear,
         },
        
         {
-          name: "Network Infrastructure",
+          name: "Medical Coding & Audits",
           description:
-            "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+            "We have certified medical coding experts across specialties including Home Health & Hospice, Radiology, Pathology, etc.",
           icon: conflict,
         },
         {
-          name: "Network Designing",
+          name: "Accounts Receivable",
           description:
-            "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+            "We help our clients to improve cash-flow and reduce days in A/R so that they get paid more, faster and at a much lower cost.",
           icon: meeting,
         },
         {
-          name: "Network Support",
+          name: "Denial Management",
           description:
-            "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+            "Our highly experienced team of billing professionals are quick, analytical problem solvers of rejected or denied claims.",
           icon: brainstorming,
         },
         {
-          name: "Corporate Collaboration",
+          name: "End-to-End RCM Solutions",
           description:
-            "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+            "KBS  provides end-to-end, comprehensive Revenue Cycle Management solutions from payor credentialing to complete billing and collections services.",
           icon: consultationSvg,
         },
         {
-          name: "Strategic Partners",
+          name: "Credit Balance Resolution",
           description:
-            "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+            "This liability carries with it real and serious financial and compliance risk. It is your fiduciary responsibility to manage these real risks.",
           icon: discussionSvg,
         },
         {
-          name: "Infinite Posibilities",
+          name: "IT consulting",
           description:
-            "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+            "IT consulting services are advisory services that help clients assess different technology strategies and, in doing so, align their technology strategies with their business or process strategies.",
           icon: turnoverSvg,
         },
       ]
