@@ -8,6 +8,7 @@ module.exports = {
 
     const {error} = validateEmailJson(req.body);
     if(error) {
+      debug(error.details[0].message)
        return res.status(400).send(error.details[0].message);
     }
 
@@ -46,8 +47,8 @@ function validateEmailJson(body){
     const schema = {
         from: Joi.string().required().email(),
         to: Joi.string().required().email(),
-        subject: Joi.string().max(50),
-        text: Joi.string().max(255)
+        subject: Joi.string().required(),
+        text: Joi.string().required().max(255)
     }
     return Joi.validate(body, schema);
 }

@@ -9,11 +9,17 @@ import '@fortawesome/fontawesome-free/css/all.css'
 import '@fortawesome/fontawesome-free/js/all.js'
 import AOS from "aos";
 import "aos/dist/aos.css";
-// import VueCarousel from 'vue-carousel';
-// Vue.use(VueCarousel);
+import '@/services/interceptor'
+import Axios from 'axios'
 
 // createApp(App).mount('#app');
 Vue.use(route.VueRouter)
+Vue.$http = Axios;
+Object.defineProperty(Vue.prototype, '$http', {
+    get() {
+        return Axios;
+    },
+});
 
 new Vue({
     created() {
