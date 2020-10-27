@@ -1,12 +1,12 @@
 <template>
   <div>
 <HeaderBanner 
-  banner-title="We Are Provided Sales & Support in IT Solutions"
+  banner-title="We Are Provided Medical Billing ,Support,Sales & in IT Solutions"
   banner-text="We Provided sales and support for the software and hardware across country." 
   :banner-image='bannerImage'>
  </HeaderBanner>
     
-    <div class="container" style="margin-top: -60px;margin-bottom: 60px;">
+    <!-- <div class="container" style="margin-top: -60px;margin-bottom: 60px;">
       <div class="row">
         <div class="col-md-4  aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
           <div class="media block-icon-1 d-block text-left">
@@ -26,7 +26,7 @@
              <p> <router-link to="/about-us" class="btn btn-primary"> Learn More </router-link></p>
             </div>
           </div>
-          <!-- .block-icon-1 -->
+      
         </div>
         <div class="col-md-4  aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
           <div class="media block-icon-1 d-block text-left">
@@ -46,7 +46,6 @@
               <p> <router-link to="/about-us" class="btn btn-primary"> Learn More </router-link></p>
             </div>
           </div>
-          <!-- .block-icon-1 -->
         </div>
         <div class="col-md-4  aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
           <div class="media block-icon-1 d-block text-left">
@@ -66,15 +65,14 @@
               <p> <router-link to="/about-us" class="btn btn-primary"> Learn More </router-link></p>
             </div>
           </div>
-          <!-- .block-icon-1 -->
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- About us -->
     <div class="about-banner">
       <div class="container">
         <div class="row pt-5 pb-5">
-          <div class="col-sm-8" style="background: #4444449c">
+          <div class="col-sm-12" style="background: #4444449c">
             <h2 class="pb-3 pt-4 text-center text-uppercase text-white">About Us</h2>
             <p data-aos="slide-up" data-aos-easing="ease" data-aos-duration="1000" data-aos-once="true" class="text-white">
               KBS dedication to delivering solutions that meet and exceed, the
@@ -117,7 +115,7 @@
       </div>
     </div>
     
-    <HappyCustomersQuotes/>
+    <!-- <HappyCustomersQuotes/> -->
   </div>
 </template>
 
@@ -132,13 +130,13 @@ import brainstorming from "../assets/images/flaticon/svg/007-brainstorming.svg";
 
 
 
-import HappyCustomersQuotes from '../views/HappyCutomersQuotes' ;
+// import HappyCustomersQuotes from '../views/HappyCutomersQuotes' ;
 import HeaderBanner from '../views/HeaderBanner';
 
 import bannerImage  from  '../assets/homebanner1.png';
 export default {
   components: {
-    HappyCustomersQuotes,
+    // HappyCustomersQuotes,
     HeaderBanner
   },
   data() {
@@ -270,7 +268,7 @@ export default {
 }
 
 .about-banner {
-  background-image: url("../assets/abouts-banner.png");
+  /* background-image: url("../assets/abouts-banner.png"); */
   background-repeat: no-repeat;
   background-size: cover;
  

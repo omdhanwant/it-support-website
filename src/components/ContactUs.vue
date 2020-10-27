@@ -62,13 +62,13 @@
       </div>
     </div>
 
-    <HappyCustomersQuotes/>
+    <!-- <HappyCustomersQuotes/> -->
     </div>
 </template>
 <script>
 import HeaderBanner from "../views/HeaderBanner";
 import bannerImage from "../assets/abouts-banner.png";
-import HappyCustomersQuotes from "../views/HappyCutomersQuotes";
+// import HappyCustomersQuotes from "../views/HappyCutomersQuotes";
 import APIService from "@/services/api.service";
 
 import Loading from 'vue-loading-overlay';
@@ -77,7 +77,7 @@ import 'vue-loading-overlay/dist/vue-loading.css';
 export default {
     components: {
         HeaderBanner,
-        HappyCustomersQuotes,
+        // HappyCustomersQuotes,
         Loading
     },
     data() {

@@ -25,14 +25,14 @@
       </div>
     </div>
     
-    <HappyCustomersQuotes/>
+    <!-- <HappyCustomersQuotes/> -->
   </div>
 </template>
 
 <script>
 import HeaderBanner from "../views/HeaderBanner";
 import bannerImage from "../assets/abouts-banner.png";
-import HappyCustomersQuotes from "../views/HappyCutomersQuotes";
+// import HappyCustomersQuotes from "../views/HappyCutomersQuotes";
 import slider1 from '@/assets/images/slider-1.jpg';
 import slider2 from '@/assets/images/slider-2.jpg';
 import slider3 from '@/assets/images/slider-3.jpg';
@@ -41,7 +41,7 @@ import dataUtil from '../services/data';
 export default {
     components:{
         HeaderBanner,
-        HappyCustomersQuotes
+        // HappyCustomersQuotes
     },
     data() {
         return {

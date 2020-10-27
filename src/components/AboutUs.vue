@@ -63,17 +63,17 @@
       </div>
     </div>
 
-    <HappyCustomersQuotes />
+    <!-- <HappyCustomersQuotes /> -->
   </div>
 </template>
 
 <script>
-import HappyCustomersQuotes from "../views/HappyCutomersQuotes";
+// import HappyCustomersQuotes from "../views/HappyCutomersQuotes";
 import HeaderBanner from "../views/HeaderBanner";
 import bannerImage from "../assets/homebanner1.png";
 export default {
   components: {
-    HappyCustomersQuotes,
+    // HappyCustomersQuotes,
     HeaderBanner,
   },
   data(){

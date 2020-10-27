@@ -197,18 +197,18 @@
       </div>
     </div>
 
-    <HappyCustomersQuotes />
+    <!-- <HappyCustomersQuotes /> -->
   </div>
 </template>
 
 <script>
-import HappyCustomersQuotes from "../views/HappyCutomersQuotes";
+// import HappyCustomersQuotes from "../views/HappyCutomersQuotes";
 import HeaderBanner from "../views/HeaderBanner";
 import bannerImage from "../assets/homebanner1.png";
 import data from "../services/data";
 export default {
   components: {
-    HappyCustomersQuotes,
+    // HappyCustomersQuotes,
     HeaderBanner,
   },
   data() {
