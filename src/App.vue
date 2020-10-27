@@ -41,6 +41,7 @@ export default {
   },
   methods: {
     handleScroll() {
+       this.closeNavCollapse();
        this.last_known_scroll_position = window.scrollY;
 
         if (!this.ticking) {
@@ -59,11 +60,17 @@ export default {
     },
     scrollUp(){
       window.scrollTo({ top: 0, behavior: 'smooth' });
+      this.closeNavCollapse();
+    },
+
+    closeNavCollapse(){
+      document.querySelector('#navbarSupportedContent').classList.remove('show');
     }
   },
   watch:{
     $route (){
-        window.scroll(0,0);
+        this.closeNavCollapse();
+        this.scrollUp();
     }
 } 
 }
