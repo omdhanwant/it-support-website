@@ -87,13 +87,17 @@ export default {
   height: 110px;
   transition: all 0.5s ease-in-out;
 }
+
+@media (max-width: 768px){
 .navbar-collapse {
-    background: white;
+     background: white;
     position: absolute;
     width: 100%;
     top: 110px;
     left: 0;
 }
+}
+
 .animate {
   opacity: 0!important;
   height: 0!important;
