@@ -1,7 +1,7 @@
 <template>
   <div>
 <HeaderBanner 
-  banner-title="We Are Provided Medical Billing ,Support,Sales & in IT Solutions"
+  banner-title="We Are Provided Medical Billing, Sales, Support & IT Solutions"
   banner-text="We Provided sales and support for the software and hardware across country." 
   :banner-image='bannerImage'>
  </HeaderBanner>
