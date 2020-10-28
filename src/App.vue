@@ -1,5 +1,6 @@
 <template>
 <div>
+  <notifications group="foo" position="top-left" />
   <NavBar :is-hidden="hideNav"></NavBar>
   <div class="page-container">
 <transition name="fade" mode="out-in">
@@ -30,14 +31,22 @@ export default {
     return {
       hideNav: false,
       last_known_scroll_position: 0,
-      ticking: false
+      ticking: false,
+      // watcher:null
     }
   },
   created () {
     window.addEventListener('scroll', this.handleScroll);
+    // this.watcher = this.$watch('$route',() => {
+    //    this.closeNavCollapse();
+    //     this.scrollUp();
+    // })
+
   },
   destroyed () {
     window.removeEventListener('scroll', this.handleScroll);
+    // this.watcher();
+    
   },
   methods: {
     handleScroll() {
@@ -66,13 +75,14 @@ export default {
     closeNavCollapse(){
       document.querySelector('#navbarSupportedContent').classList.remove('show');
     }
-  },
+  }
+  ,
   watch:{
     $route (){
         this.closeNavCollapse();
         this.scrollUp();
     }
-} 
+}
 }
 </script>
 

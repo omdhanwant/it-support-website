@@ -69,10 +69,11 @@
 import HeaderBanner from "../views/HeaderBanner";
 import bannerImage from "../assets/abouts-banner.png";
 // import HappyCustomersQuotes from "../views/HappyCutomersQuotes";
-import APIService from "@/services/api.service";
+// import APIService from "@/services/api.service";
 
 import Loading from 'vue-loading-overlay';
 import 'vue-loading-overlay/dist/vue-loading.css';
+const $email = window.Email;
 
 export default {
     components: {
@@ -95,6 +96,14 @@ export default {
     },
     methods:{
       sendMail() {
+        if(!this.name || !this.message || !this.email) {
+           this.$notify({
+              group: 'foo',
+              title: 'Error',
+              text:  'Please fill all the fields'
+            });
+          return
+        }
         this.isLoading = true;
         const payload = {
           "from": "kumarbsindia@gmail.com",
@@ -103,20 +112,52 @@ export default {
           "text": this.message
         }
 
-        console.log(payload);
-        APIService.sendMail(payload)
-        .then(response => {
+
+        $email.send({ 
+        Host: "smtp.gmail.com", 
+        Username: "kumarbsindia@gmail.com", 
+        Password: "Apple@0909", 
+        To: payload.to, 
+        From: payload.from, 
+        Subject: payload.subject, 
+        Body: payload.text, 
+      }) 
+        .then((message) => { 
+          // console.log(message);
           this.isLoading = false;
-          console.log(response);
-          this.name = null;
-          this.email = null;
-          this.message = null;
+             this.$notify({
+              group: 'foo',
+              title: 'Error',
+              text:  message
+            });
         })
-        .catch(err => {
-          this.isLoading = false;
-          console.log(err);
-          throw err;
-        })
+        // .catch(err => {
+        //   this.isLoading = false;
+        //   this.$notify({
+        //       group: 'foo',
+        //       title: 'Error',
+        //       text: err
+        //     });
+        // }); 
+
+        // APIService.sendMail(payload)
+        // .then(response => {
+        //   this.isLoading = false;
+        //   console.log(response);
+        //   this.name = null;
+        //   this.email = null;
+        //   this.message = null;
+        // })
+        // .catch(err => {
+        //   this.isLoading = false;
+        //   console.log(err);
+        //   this.$notify({
+        //       group: 'foo',
+        //       title: 'Error',
+        //       text: err
+        //     });
+        //   throw err;
+        // })
       }
     }
 }

@@ -11,8 +11,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import '@/services/interceptor'
 import Axios from 'axios'
+import Notifications from 'vue-notification'
 
 // createApp(App).mount('#app');
+Vue.use(Notifications)
 Vue.use(route.VueRouter)
 Vue.$http = Axios;
 Object.defineProperty(Vue.prototype, '$http', {
