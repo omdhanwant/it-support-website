@@ -72,7 +72,7 @@ export default {
 
 <style scoped>
 .logo {
-  width: 100px;
+  width: 80px;
   padding: 0;
 }
 .itnavbar {
@@ -83,9 +83,10 @@ export default {
 }
 .navbar {
   /* background: #e6e6e6; */
-  opacity: 0.8;
-  height: 110px;
+  /* opacity: 0.8; */
+  /* height: 110px; */
   transition: all 0.5s ease-in-out;
+  padding: 0rem 1rem;
 }
 
 @media (max-width: 768px){
